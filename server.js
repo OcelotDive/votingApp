@@ -1,6 +1,6 @@
 //create a db connection string
 
-var db = 'mongodb://localhost:27017/votingapp';
+var db = 'mongodb://localhost/votingapp';
 
 //create port
 
@@ -31,7 +31,7 @@ dotenv.config({
 //connect to mongodb
 
 
-mongoose.connect(process.env.MONGOLAB_URI || db, function (err) {
+mongoose.connect(process.env.MONGODB_URI(err) {
     if (err) {
         console.log(err)
     };
