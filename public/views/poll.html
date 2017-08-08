@@ -1,0 +1,25 @@
+
+
+
+<h2  id="pageHeader" ng-bind="vm.polls[vm.param].name"></h2>
+
+<hr>
+<h4 ng-attr-id="{{'options' + $index}}" ng-repeat="op in vm.polls[vm.param].options" ng-model="vm.opNum"><span ng-attr-id="{{'pollOptionName' + $index}}" class="navText" style="color: #158CBA;">{{op.name}}</span><p></p><input type="radio" name="selection" ng-click="vm.opNum = $index; vm.enabledRadioButton = true;"></h4>
+<button id="castVote" class="btn btn-primary" ng-disabled="!vm.enabledRadioButton" ng-click="vm.voteIncrease(vm.opNum)">Submit Vote</button>
+<button id="deleteVote" class="btn btn-danger" ng-click="removePoll()">Delete vote</button>
+<br><br>
+<section>
+<p>Display Here</p>
+<br>
+    
+    
+ 
+    
+
+    
+    
+    
+    
+    
+</section>
+

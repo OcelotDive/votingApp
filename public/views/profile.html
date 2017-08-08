@@ -1,0 +1,11 @@
+<h3 id="pageHeader">{{vm.title}}</h3>
+<hr>
+<i id="userGlyph" class="glyphicon glyphicon-user">
+    
+</i>
+<P style="font-weight: 900;font-size:1vw; margin-top: 0.5vw;">PROFILE: {{vm.user.name}}</P>
+<P style="font-weight: 900;font-size:1vw; margin-top: 0.5vw;">ID: {{vm.user._id}}</P>
+<P style="font-weight: 900;font-size:1vw; margin-top: 0.5vw;">STATUS: <span style="color: red;">Logged In</span></P>
+<button class="btn btn-success" ng-click="vm.goToPolls();">Poll Page</button>
+<button class="btn btn-danger" ng-click="vm.logOut();">Logout</button>
+<h3 class="animated fadeInDownBig" id="welcomeMessage">Welcome back, {{ vm.user.name }}.</h3>

@@ -1,0 +1,42 @@
+<h1 ng-init="vm.a();" style="text-align: center;">POLL RESULTS</h1>
+
+<section id="chartInfoSection">
+<div id="chartName">{{vm.chartName}}</div>
+<ol class="chartOptionsList">
+    <li class="listItem" ng-repeat="item in vm.chartOptions">
+        <div class="listItemName" ng-attr-id="{{'chartOption' + $index + 'Name'}}">{{item.name}}</div> 
+        <div class="listItemVotes" ng-attr-id="{{'chartOption' + $index + 'Votes'}}">{{item.votes}}</div>
+    </li>
+</ol>
+</section>
+
+
+<div id="controlPanel" class="animated slideInLeft">
+<ul id="chartButtonList"  style="list-style: none;">
+    <li class="chartLi">
+        <button onclick="barhighlight()" class="btn btn-danger chartButton" id="barButton" style="width: 7vw; font-size: 0.7vw;" ng-click="vm.bar();">barchart</button>
+    </li>
+    <li class="chartLi">
+    <button onclick="piehighlight()" class="btn btn-primary chartButton" id="pieButton" style="width: 7vw; font-size: 0.7vw;" ng-click="vm.pie();">piechart</button>
+    </li>
+    <li class="chartLi">
+    <button onclick="columnhighlight()" class="btn btn-danger chartButton" id="columnButton" style="width: 7vw; font-size: 0.7vw;" ng-click="vm.column();">columnchart</button>
+    </li>
+    <li class="chartLi">
+    <button onclick="scatterhighlight()" class="btn btn-danger chartButton" id="scatterButton" style="width: 7vw; font-size: 0.7vw;" ng-click="vm.scatter();">scatterchart</button>
+    </li>
+    <li class="chartLi">
+    <button onclick="areahighlight()" class="btn btn-danger chartButton" id="areaButton" style="width: 7vw; font-size: 0.7vw;" ng-click="vm.area();">areachart</button>
+    </li>
+     <li class="chartLi">
+    <button class="btn btn-warning" id="pollsButton" style="width: 7vw; font-size: 0.7vw; margin-top: 10%;" ng-click="vm.goToPolls();">Polls Page</button>
+    </li>
+    <li class="chartLi">
+        <button class="btn btn-success" id="profileButton" style="width: 7vw; font-size: 0.7vw;"  ng-click="vm.goToProfile()">Profile</button>
+    </li>
+</ul>
+
+</div>
+<div id="chartWrap" class="container">
+<div id="chartContainer"></div>
+</div>

@@ -1,0 +1,21 @@
+
+<h3 id="pageHeader">{{vm.title}}</h3>
+<p style="text-align: center; font-family: 'Frijole', cursive;">VIEW CURRENT POLLS or CREATE YOUR OWN.</p>
+<hr>
+<input class="form-control" type="text" ng-model="vm.poll.name" placeholder="Name of poll...">
+<hr>
+<input class="form-control" type="text" ng-model="vm.poll.options[$index].name" ng-repeat="option in vm.poll.options" placeholder="Option name" style="padding: 10px;">
+<hr>
+<button class="btn btn-success" ng-click="vm.addOption()">Add Option</button>
+<button  class="btn btn-danger" ng-click="vm.removeOption()">Remove Option</button>
+<hr>
+<button  class="btn btn-primary" ng-disabled="vm.poll.options.length <= 1" ng-click="vm.addPoll()">Add Poll</button>
+<hr>
+<button  class="btn btn-default"  ng-click="vm.goToProfile()">Profile</button>
+<hr>
+<h4 style="color: red; text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;" class="animated fadeIn infinite navText">Current Polls</h4>
+<ul style="list-style-type: upper-roman">
+    <li ng-repeat="pollPost in vm.polls" class="navText"><a href="/polls/{{$index}}">{{pollPost.name}}</a></li>
+</ul>
+
+

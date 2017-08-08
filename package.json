@@ -1,0 +1,23 @@
+{
+  "name": "fullstackVote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-jwt": "^0.1.9",
+    "animate.css": "^3.5.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.3",
+    "morgan": "^1.8.1"
+  }
+}
