@@ -4,7 +4,7 @@ var db = 'mongodb://localhost/votingapp';
 
 //create port
 
-var port = process.env.port || 443;
+var port = process.env.port || 3000;
 
 //load router
 
