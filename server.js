@@ -31,7 +31,7 @@ dotenv.config({
 //connect to mongodb
 
 
-mongoose.connect(process.env.MONGOLAB_URI, function (err) {
+mongoose.connect(process.env.MONGODB_URI || db, function (err) {
     if (err) {
         console.log(err)
     };
