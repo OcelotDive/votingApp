@@ -332,7 +332,7 @@
                     .then(function (response) {
                     console.log(url)
                    
-                 var str = 'https://agile-castle-96332.herokuapp.com/polls/' + vm.param;
+                 var str = 'agile-castle-96332.herokuapp.com/polls/' + vm.param;
                   console.log("this is str" + str);
                   
                        $location.path(str + '/update');
