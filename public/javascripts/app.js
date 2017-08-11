@@ -333,7 +333,7 @@
                     console.log(url)
                    
                  var str = 'https://agile-castle-96332.herokuapp.com/polls/' + vm.param.toString();
-                  console.log("this is str" + str);
+                  console.log(str);
                   
                        $location.path(str + '/update');
                    
