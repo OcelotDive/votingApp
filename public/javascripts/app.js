@@ -332,10 +332,10 @@
                     .then(function (response) {
                     console.log(url)
                    
-                 var str = '//agile-castle-96332.herokuapp.com/polls/' + vm.param.toString();
-                  console.log(str);
+                 var str = "https://agile-castle-96332.herokuapp.com/polls/0/update";
+                  console.log("this is str" + str);
                   
-                       $location.path(str + '/update');
+                       $location.path(str);
                    
                     }, function (err) {
                         vm.error = err;
