@@ -332,7 +332,7 @@
                     .then(function (response) {
                     console.log(url)
                    
-                 var str = url.substring(21, url.length);
+                 var str = url.substring(str.length -7, url.length);
                   console.log("this is str" + str);
                   
                        $location.path(str + '/update');
