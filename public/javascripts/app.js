@@ -365,7 +365,7 @@
           }
           
           
-          setInterval(function(){
+          setTimeout(function(){
                 google.charts.load('current', {'packages':['corechart']});
   
         
@@ -373,7 +373,7 @@
       google.charts.setOnLoadCallback(drawChart);
       
  
-          },2000);
+          },1500);
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
